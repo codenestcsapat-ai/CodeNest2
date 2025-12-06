@@ -140,8 +140,8 @@
             gdpr: 'GDPR',
             terms: 'Terms of Service',
             copyright: '© 2025 CodeNest. All rights reserved.',
-            english: 'English',
-            hungarian: 'Magyar'
+            english: 'Switch to English',
+            hungarian: 'Magyarra váltás'
         },
         hu: {
             // Meta
@@ -756,8 +756,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateLanguageSwitchDisplays() {
         const opposite = currentLang === 'en' ? 'hu' : 'en';
 
-        // Determine label text: when site is EN show 'Magyar', when HU show 'English'
-        const label = opposite === 'hu' ? 'Magyar' : 'English';
+        // Determine label text: when site is EN show 'Magyarra váltás', when HU show 'Switch to English'
+        const label = opposite === 'hu' ? 'Magyarra váltás' : 'Switch to English';
 
         // Footer switcher
         const footerLang = document.querySelector('.footer-lang');
